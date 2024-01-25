@@ -1,0 +1,19 @@
+<ul>
+    @for (opt of opts; track opt;let idx=$index){
+        <li>
+            <button 
+                (click)="setCurrentOptIndex(idx)"
+                >{{ opt }}</button>
+        </li>
+    }
+</ul>
+<ul>
+    @for(style of currentStyles;track style;let idy=$index){
+        <li>
+            
+            <button
+                (click)="setCurrentStyleIndex(idy)"
+            >{{ style }}</button>
+        </li>
+    }
+</ul>

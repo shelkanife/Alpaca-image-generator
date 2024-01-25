@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+main > *{
+    flex: 1;
+    min-width: 300px;
+}
+@media screen and (max-width:768px){
+    main{
+        padding: 0;
+    }
+}

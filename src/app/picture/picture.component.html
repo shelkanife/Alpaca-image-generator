@@ -1,0 +1,24 @@
+<section>
+    <div id="pic-wrapper">
+        <img src="./assets/alpaca/backgrounds/{{currentStyle.background}}.png"/>
+        <img src="./assets/alpaca/ears/{{currentStyle.ears}}.png"/>
+        <img src="/assets/alpaca/neck/{{currentStyle.neck}}.png"/>
+        <img src="./assets/alpaca/hair/{{currentStyle.hair}}.png"/>
+        <img src="./assets/alpaca/eyes/{{currentStyle.eyes}}.png"/>
+        <img src="./assets/alpaca/nose.png"/>
+        <img src="./assets/alpaca/mouth/{{currentStyle.mouth}}.png"/>
+        <img src="./assets/alpaca/leg/{{currentStyle.leg}}.png"/>
+        <img src="./assets/alpaca/accessories/{{currentStyle.accessories}}.png"/>
+    </div>
+    <div id="action-wrapper">
+        <!-- <button (click)="openClose()">&#9664;</button> -->
+        <button (click)="selectRandomStyle(0)">
+            <span>🔀</span>
+            <span>Random</span>
+        </button>
+        <button>
+            <span>🖼</span>
+            <span>Download</span>
+        </button>
+    </div>
+</section>
