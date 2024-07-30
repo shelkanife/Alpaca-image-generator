@@ -15,14 +15,14 @@ import {alphacaPart, alphacaParts, styles} from './data'
 export class AppComponent {
   title = 'alphaca-pics';
   style = {
-    background:`blue50`,
-    neck:`default`,
-    eyes:`default`,
-    hair:`default`,
-    ears:`default`,
-    mouth:`default`,
-    leg:`default`,
-    accessories:`earings`
+    background:"blue50",
+    neck:"default",
+    eyes:"default",
+    hair:"default",
+    ears:"default",
+    mouth:"default",
+    leg:"default",
+    accessories:"earings"
   }
   currentField='background' as alphacaPart
   currentFieldIndex=0
@@ -37,7 +37,6 @@ export class AppComponent {
     this.currentFieldIndex=index
   }
   changeRandomly(idx:number){
-    console.log("calling random")
     let randomNumbers=[];
     for(let style of styles){
       let randomNumber=Math.floor(Math.random()*style.length)
